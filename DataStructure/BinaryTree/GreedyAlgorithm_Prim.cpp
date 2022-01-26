@@ -25,7 +25,7 @@ void primMST(int graph[V][V]){
 	key[0] = 0;
 	parent[0] = -1;
 
-	for (int count = 0; count < V-1; cout++){
+	for (int count = 0; count < V-1; count++){
 		int u = minKey(key,mstSet);
 		mstSet[u] = true;
 
@@ -39,7 +39,6 @@ void primMST(int graph[V][V]){
 }
 
 // ham dua ra dinh co khoang cach nho nhat voi tap dinh da xet 
-++
 // mang key luu khoang cach nho nhat tu cay bao trum den cac dinh 
 int minKey(int key[], bool mstSet[]){
 	int min = INT_MAX, min_index;

@@ -47,11 +47,11 @@ int size(){
 // }
 void insert(int data){
 
-   if(!isFull()){
+   	if(!isFull()){
 	
-      if(rear == MAX-1){
-         rear = -1;            
-      }       
+      	if(rear == MAX-1){
+         	rear = -1;            
+      	}       
 
       intArray[++rear] = data;
       itemCount++;
